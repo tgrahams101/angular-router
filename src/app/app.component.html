@@ -16,6 +16,13 @@
       <li>
         <a routerLink="/resume">Resume</a>
       </li>
+      <li> Resume
+        <ul>
+          <li *ngFor="let job of jobs.reverse()">
+            <a routerLink="/resume/{{job.id}}"> {{job.title}}</a>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <router-outlet></router-outlet>

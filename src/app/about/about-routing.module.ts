@@ -4,7 +4,7 @@ import { AboutComponent } from './about.component';
 import { CareerComponent } from '../career/career.component';
 import { EarlyLifeComponent } from '../early-life/early-life.component';
 
-const routes: Routes = [
+const aboutRoutes: Routes = [
     {
         path: 'about',
         component: AboutComponent,
@@ -22,9 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [ RouterModule.forChild(routes)],
-    exports: []
+    imports: [ RouterModule.forChild(aboutRoutes)],
+    exports: [ RouterModule ]
 })
-export class AboutRoutingModule {
-
-}
+export class AboutRoutingModule {}

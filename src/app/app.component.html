@@ -13,12 +13,9 @@
       <li>
         <a routerLink="/links">Link</a>
       </li>
-      <li>
-        <a routerLink="/resume">Resume</a>
-      </li>
       <li> Resume
         <ul>
-          <li *ngFor="let job of jobs.reverse()">
+          <li *ngFor="let job of jobs">
             <a routerLink="/resume/{{job.id}}"> {{job.title}}</a>
           </li>
         </ul>
